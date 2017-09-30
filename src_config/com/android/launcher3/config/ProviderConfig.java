@@ -16,9 +16,11 @@
 
 package com.android.launcher3.config;
 
+import com.android.launcher3.BuildConfig;
+
 public class ProviderConfig {
 
-    public static final String AUTHORITY = "com.google.android.apps.nexuslauncher.settings".intern();
+    public static final String AUTHORITY = BuildConfig.APPLICATION_ID + ".settings".intern();
 
     public static final boolean IS_DOGFOOD_BUILD = true;
 }
