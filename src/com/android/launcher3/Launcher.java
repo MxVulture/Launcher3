@@ -3149,7 +3149,7 @@ public class Launcher extends BaseActivity
      * resumed.
      */
    public void tryAndUpdatePredictedApps() {
-       if (getSharedPrefs().getBoolean("pref_show_predictions", true)) {
+       if (getSharedPrefs().getBoolean("pref_show_predictions", false)) {
            mAppsView.setPredictedApps(predictiveAppsProvider.getPredictions());
            predictiveAppsProvider.updateTopPredictedApps();
        } else {
